@@ -1,0 +1,34 @@
+<html>
+<head>
+ <link rel="stylesheet" href="{{url_for('static',filename='home.css')}}">
+
+
+</head>
+<body>
+<div class="li" > <h1>EVENT MANAGEMENT SYSTEM</h1></div>
+<div class="social">
+    <h1>Follow us on:</h1>
+
+
+<a  href="https://www.youtube.com/" class="fa fa-facebook"><img src="{{url_for('static', filename='utube.png')}}" width="60px" /></a><br><br>
+<a  href="https://twitter.com/" class="fa fa-google"><img src="{{url_for('static', filename='twitter.png')}}" width="60px" /></a><br><br>
+<a  href="https://www.linkedin.com/" class="fa fa-linkedin"><img src="{{url_for('static', filename='linkedin.png')}}" width="60px" /></a><br><br>
+    <a  href="http://instagram.com/" class="fa fa-instagram"><img src="{{url_for('static', filename='insta1.jpg')}}" width="60px" /></a><br><br>
+
+
+</div>
+<div class="p1">
+  <form action="/savedetails" method="post">
+      <h5 style="position:absolute;bottom:300px;left:105px;color:brown;font-size:20px;">EVENT MANAGEMNET SYSTEM</h5>
+
+
+
+      <input type="text" placeholder="ENTER USERNAME" name="user" id="input1">
+      <input type="password" placeholder="ENTER PASSWORD" name="password" id="input2">
+      <input type="submit" value="LOGIN" id="input3">
+      <a href="/registerform" style="position:relative;top:170px;left:150px;font-size:20px;">REGISTER</a>
+
+  </form>
+</div>
+</body>
+</html>

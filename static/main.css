@@ -1,0 +1,15 @@
+
+body{
+ background-image: url("evm1.jpg");
+ background-repeat: no-repeat;
+background-size: 1400px 650px;
+}
+
+
+.evm{
+background-color:#c0c0c0;
+position:absolute;
+top:60px;
+right:80px;
+}
+

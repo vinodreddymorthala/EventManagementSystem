@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href= "{{ url_for('static',filename='register.css') }}">
+
+    <title>registration form</title>
+</head>
+<body>
+<div class="p1">
+    <h1 ><center>  Registration Form</center></h1>
+</div>
+<form action="/newpage" method="post" name="i1" onsubmit="return validate()">
+<div class="firstin">
+
+    <table>
+        <tr>
+            <td><input type="text" name="username" id="in1" placeholder="Your Name" onblur="return firstname()"></input></td>
+        </tr>
+           <tr>
+               <td><input type="email" id="in2" name="email" placeholder="Enter email"></input></td>
+           </tr>
+           <tr>
+               <td><input type="phonenumber" id="in3" name="phonenumber" placeholder="Phone Number" onblur="return firstname1()"></input></td>
+           </tr>
+           <tr>
+               <td><input type="password" id="in4" name="password1" placeholder="Enter Password" onblur="return firstname2()"></input></td>
+           </tr>
+           <tr>
+               <td><input type="password" id="in5" name="password2" placeholder="Confirm Password"onblur="return firstname3()"></input></td>
+           </tr>
+    </table>
+
+</div>
+<input id="in6" type="submit" value="register">
+    </form>
+</body>
+</html>

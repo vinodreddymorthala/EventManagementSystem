@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<head>
+
+    <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}">
+
+    <title>login page</title>
+
+
+</head>
+
+  <br><br><br><br><br><br><br><br><br><br><br><<br><br>
+<br><br><br><br><br><br><br><br>
+<h1><center>Event Management System<br> Database Design<br><br></center></h1>
+<h3>Login Table: This table stores Username and password as admin’s login form</h3>
+    <style>
+
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<table style="width:50%">
+ <tr>
+   <th> Field Name</th>
+   <th> Data Type </th>
+    <th>Constraint	</th>
+   <th> Description </th>
+  </tr>
+    <tr>
+    <td>Emailaddress</td>
+    <td> Varchar(20) </td>
+     <td>Not Null </td>
+     <td>Username for login procedure. </td>
+        <tr>
+
+    <td>Password</td>
+    <td>Varchar(20)</td>
+    <td>Not Null</td>
+   <td> Password for login procedure</td>
+</tr>
+</table>
+<h3>Expenditure Table: This table stores expenditure information about the catering service</h3>
+ <style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<table style="width:50%">
+    <tr>
+       <th> Field Name</th>
+        <th>Data Type</th>
+        <th>Constraint</th>
+        <th>Description</th>
+          </tr>
+    <tr>
+<td>Date</td>
+    <td>date</td>
+    <td>Not Null</td>
+    <td>Date on which the expenditure is entered</td>
+    </tr>
+<td>Type</td>
+    <td>Varchar(20)</td>
+    <td>Not Null</td>
+   <td> Type of the expenditure</td>
+    <tr>
+<td>Amount</td>
+   <td> Money</td>
+    <td>Not Null	</td>
+   <td> Amount of the expenditure</td>
+    <tr>
+
+</table>
+    <h3>Registration Table: This table stores Registration Details of Customers</h3>
+ <style>
+table, th, td {
+  border:1px solid black;
+}
+
+
+
+</style>
+<table style="width:50%">
+ <tr>
+     <th>FieldName</th>
+         <th>Data Type</th>
+        <th> Constraint	</th>
+       <th>  Description</th>
+ </tr>
+    <td>
+        User_Id</td>
+        <td>Varchar</td>
+        <td>Primary Key</td>
+        <td>Unique Id generated for every customer
+    </td>
+    <tr>
+    <td>Password	</td>
+        <td>Varchar</td>
+        <td>Not Null</td>
+        <td>Password for registration process</tr>
+     <td>
+        R_password	</td>
+        <td>Varchar</td>
+        <td> Not Null	</td>
+        <td>Repeat password
+
+    </td>
+    <tr>
+    <td>
+        Fname		</td>
+        <td>Varchar</td>
+        <td> Not Null	</td>
+        <td> First Name
+</tr>
+    </td>
+    <tr>
+    <td>
+        Lname		</td>
+        <td>Varchar</td>
+        <td> Not Null	</td>
+        <td> Last Name
+</tr>
+    <tr>
+    <td>
+        Adress		</td>
+        <td>Varchar</td>
+        <td> Not Null	</td>
+        <td> Adress of customer
+</tr>
+    </td>
+    <tr>
+    <td>
+        DOB		</td>
+        <td>date</td>
+        <td> Not Null	</td>
+        <td> Date of Birth
+</tr>
+    </td>
+    <tr>
+    <td>
+        city		</td>
+        <td>Varchar</td>
+        <td> Not Null	</td>
+        <td> City of residence
+</tr>
+    </td>
+    <tr>
+    <td>
+        State		</td>
+        <td>Varchar</td>
+        <td> Not Null	</td>
+        <td> State
+</tr>
+    </td>
+    <tr>
+    <td>
+        Mobile_no		</td>
+        <td>Varchar</td>
+        <td> Not Null	</td>
+        <td> Mobile No
+</tr>
+    </td>
+    <tr>
+    <td>
+        Contact_no		</td>
+        <td>Varchar</td>
+        <td> Not Null	</td>
+        <td> Contact no
+</tr>
+    </td>
+    <tr>
+    <td>
+        Email_Id		</td>
+        <td>Varchar</td>
+        <td> Not Null	</td>
+        <td> Email adress
+</tr>
+    </td>
+
+    </td>
+
+    </td>
+</table>
+
+</style>
+<table style="width:50%">
+    <h3>Supplier Payments Table: This table stores information about Supplier payments.
+
+</h3>
+ <tr>
+     <th>FieldName</th>
+         <th>Data Type</th>
+        <th> Constraint	</th>
+       <th>  Description</th>
+ </tr>
+    <td>
+        Date</td>
+        <td>Varchar</td>
+        <td>Not Null</td>
+        <td>Unique Id  for Department
+    </td>
+    <tr>
+         <td>SupplierName</td>
+         <td>Varchar</td>
+        <td> Not Null	</td>
+       <td>  Department Name</td>
+    </tr>
+     <td>
+        Amount</td>
+        <td>Money</td>
+        <td>Not Null</td>
+</table>
+    <style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<table style="width:50%">
+    <h3>Event Table: This table stores information about Courses offered in the college.
+
+</h3>
+ <tr>
+   <th> Field Name</th>
+   <th> Data Type </th>
+    <th>Constraint	</th>
+   <th> Description </th>
+  </tr>
+     <tr>
+    <td>Event code</td>
+    <td> Number</td>
+     <td>Primary key</td>
+     <td>Unique Id for Event </td>
+        <tr>
+
+    <td>Event type</td>
+    <td>Varchar(20)</td>
+    <td>Not Null</td>
+   <td> Type of Event</td>
+</tr>
+</table>
+
+
+
+
+       <style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<table style="width:50%">
+    <h3>Order Table: This table stores information of all the orders.
+
+
+</h3>
+ <tr>
+   <th> Field Name</th>
+   <th> Data Type </th>
+    <th>Constraint	</th>
+   <th> Description </th>
+  </tr>
+     <tr>
+    <td>Order no</td>
+    <td> Number</td>
+     <td>Primary key</td>
+     <td>Unique Id for Event </td>
+        <tr>
+
+    <td>Email_adr</td>
+    <td>Varchar</td>
+    <td>Not Null</td>
+   <td>Email adress</td>
+</tr>
+     <tr>
+    <td>Event_code</td>
+    <td> Varchar</td>
+     <td>Not null</td>
+     <td>Unique Id for Event </td>
+        <tr>
+     <tr>
+    <td>Category</td>
+    <td> Varchar</td>
+     <td>NOt null</td>
+     <td>Category </td>
+        <tr>
+</table>
+
+
+
+
+
+        <style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<table style="width:50%">
+    <h3> Receipts Table: This table stores information about the receipts.
+
+
+</h3>
+ <tr>
+   <th> Field Name</th>
+   <th> Data Type </th>
+    <th>Constraint	</th>
+   <th> Description </th>
+  </tr>
+     <tr>
+    <td>Receipt_No</td>
+    <td> Numberic</td>
+     <td>Primary key</td>
+     <td>Receipt NO </td>
+        <tr>
+
+    <td>Bill_No</td>
+    <td>Numeric</td>
+    <td>Foreign Key</td>
+   <td> Bill number</td>
+</tr>
+    <tr>
+
+    <td>Tot_amt</td>
+    <td>Numeric</td>
+    <td>Not Null</td>
+   <td> Total amount</td>
+</tr>
+
+       <tr>
+
+    <td>paid_amt</td>
+    <td>Numeric</td>
+    <td>Not Null</td>
+   <td> Amount Paid</td>
+</tr>
+
+
+       <tr>
+
+    <td>Balance</td>
+    <td>Numeric</td>
+    <td>Not Null</td>
+   <td> Balance amount</td>
+</tr>
+
+       <tr>
+
+    <td>Rdate</td>
+    <td>date</td>
+    <td>NotNull</td>
+   <td>Receipt Date</td>
+</tr>
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+<div class=evm>
+    <h2>EVENT MANAGEMNET SYSTEM</h2>
+
+<button type="button"><a href="/home">HOME</a></button>
+    <button type="button"><a href="/abt">ABOUT</a></button>
+    <button type="button"><a href="/tool">TOOLS</a></button>
+   <button type="button"><a href="/test">EVENTS</a></button>
+    <button type="button"><a href="/contact us">CONTACT US</a></button>
+
+</div>
+
+
+
+</body>
+</html>

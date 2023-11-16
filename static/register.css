@@ -1,0 +1,101 @@
+body{
+ background-image: url("EVENT 3.jpg");
+ background-repeat: no-repeat;
+background-size: 1300px 600px;
+}
+
+firsti1{
+        width:  450px;
+        height: 350px;
+        position:relative;
+   left:500px; top:50px;
+        padding:70px;
+        background: #AF0E6;
+        border-radius: 15px;
+        border_background:white;
+}
+ #in1{
+ width: 200px;
+ position:relative;
+   left:500px; top:50px;
+    padding: 17px;
+    margin: 8px 0;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-sizing: border-square;
+ }
+ #in2{
+ width: 200px;
+   position:relative;
+   left:500px; top:50px;
+    padding: 17px;
+    margin: 8px 0;
+    border: 2px solid black;
+    border-radius: 4px;
+      box-sizing: border-square;
+ }
+ #in3{
+ width: 200px;
+  position:relative;
+   left:500px; top:50px;
+    padding: 17px;
+    margin: 8px 0;
+    border: 2px solid black;
+    border-radius: 4px;
+      box-sizing: border-square;
+ }
+ #in4{
+ width: 200px;
+  position:relative;
+   left:500px; top:50px;
+    padding: 17px;
+    margin: 8px 0;
+    border: 2px solid black;
+    border-radius: 4px;
+      box-sizing: border-square;
+ }
+ #in5{
+ width: 200px;
+  position:relative;
+   left:500px; top:50px;
+    padding: 17px;
+    margin: 8px 0;
+    border: 2px solid black;
+    border-radius: 4px;
+      box-sizing: border-square;
+ }
+ #in6{
+  background-color: #2E8B57;
+  border: dotted;
+  color:  white;
+  width: 250px;
+  position:relative;
+   left:500px; top:50px;
+
+  padding: 17px;
+  margin: 8px 0;
+  border: 2px solid black;
+  border-radius: 4px;
+  box-sizing: border-dotted;
+  border: 2px solid yellow;
+  cursor: pointer;
+  font-size: 15px;
+
+ }
+ #p2{
+ width: 100px; /* width of container */
+    height: 100px; /* height of container */
+   position:absolute;
+top:-10px;
+left:40px;
+}.p1{
+ position:absolute;
+top:-10px;
+left:400px;
+}
+.ee{
+position:relative;
+top:-2px;
+left:300px;
+}
+
